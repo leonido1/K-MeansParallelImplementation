@@ -1,0 +1,19 @@
+﻿  MpiSupport.cpp
+  MainProgramm.cpp
+d:\kmeans parallels\mainprogramm.cpp(18): warning C4101: 'status': unreferenced local variable
+  KMeanModule.cpp
+d:\kmeans parallels\kmeanmodule.cpp(21): warning C4305: 'initializing': truncation from 'double' to 'float'
+d:\kmeans parallels\kmeanmodule.cpp(133): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\kmeans parallels\kmeanmodule.cpp(218): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+d:\kmeans parallels\mpisupport.cpp(44): warning C4700: uninitialized local variable 'cordMPIType' used
+MainProgramm.obj : error LNK2019: unresolved external symbol _MPI_Comm_size referenced in function _main
+MainProgramm.obj : error LNK2019: unresolved external symbol _MPI_Comm_rank referenced in function _main
+MainProgramm.obj : error LNK2019: unresolved external symbol _MPI_Init referenced in function _main
+MainProgramm.obj : error LNK2019: unresolved external symbol _MPI_Finalize referenced in function _main
+MpiSupport.obj : error LNK2019: unresolved external symbol _MPI_Send referenced in function "void __cdecl calcDiametersWIthSlaves(struct Coordinates * *,struct Cluster *,int,float *)" (?calcDiametersWIthSlaves@@YAXPAPAUCoordinates@@PAUCluster@@HPAM@Z)
+MpiSupport.obj : error LNK2019: unresolved external symbol _MPI_Recv referenced in function "void __cdecl calcDiametersWIthSlaves(struct Coordinates * *,struct Cluster *,int,float *)" (?calcDiametersWIthSlaves@@YAXPAPAUCoordinates@@PAUCluster@@HPAM@Z)
+MpiSupport.obj : error LNK2019: unresolved external symbol _MPI_Type_commit referenced in function "void __cdecl createCordType(int *)" (?createCordType@@YAXPAH@Z)
+MpiSupport.obj : error LNK2019: unresolved external symbol _MPI_Type_create_struct referenced in function "void __cdecl createCordType(int *)" (?createCordType@@YAXPAH@Z)
+C:\Program Files\MPICH2\lib\mpi.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+D:\Kmeans parallels\Debug\ParallelTimedKmeans.exe : fatal error LNK1120: 8 unresolved externals
